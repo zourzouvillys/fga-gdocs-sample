@@ -1,0 +1,16 @@
+
+
+fact add auth0        --fga:type Org
+fact add employees    --fga:type Group --fga:partOf auth0
+fact add slt          --fga:type Group --fga:partOf employees
+fact add engineering  --fga:type Group --fga:partOf employees
+fact add theo         --fga:type User  --fga:partOf employees
+fact add eugenio      --fga:type User  --fga:partOf slt
+fact add allhands      --fga:type Doc
+fact add acquisitions  --fga:type Folder
+fact add acme          --fga:type Doc  --fga:partOf acquisitions
+
+
+fact add auth0 --canComment allhands
+fact add slt --canView acquisitions
+fact add eugenio --canEdit acme --canEdit allhands

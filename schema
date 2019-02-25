@@ -1,0 +1,13 @@
+
+schema add type User   --fga:subClassOf fga:Party
+schema add type Group  --fga:subClassOf fga:PartyCollection
+schema add type Org    --fga:subClassOf fga:PartyCollection
+
+
+schema add type Doc     --fga:subClassOf fga:Asset
+schema add type Folder  --fga:subClassOf fga:AssetCollection
+
+schema add link canView    --fga:subPropertyOf fga:action
+schema add link canComment --fga:subPropertyOf canView
+schema add link canEdit    --fga:subPropertyOf canView --fga:subPropertyOf canComment
+
