@@ -23,7 +23,6 @@
       "fga:type": "fga:Class",
       "fga:subClassOf": [
         "fga:Asset",
-        "fga:AssetC"
       ]
     },
     {
@@ -41,7 +40,6 @@
       "fga:type": "fga:Class",
       "fga:subClassOf": [
         "fga:AssetCollection",
-        "fga:Assetollection"
       ]
     },
     {
