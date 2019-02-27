@@ -22,7 +22,7 @@
       "id": "Doc",
       "fga:type": "fga:Class",
       "fga:subClassOf": [
-        "fga:Asset",
+        "fga:Asset"
       ]
     },
     {
@@ -39,7 +39,7 @@
       "id": "Folder",
       "fga:type": "fga:Class",
       "fga:subClassOf": [
-        "fga:AssetCollection",
+        "fga:AssetCollection"
       ]
     },
     {
